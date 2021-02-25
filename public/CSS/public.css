@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+body{
+    background-color: black;
+    font-family:Lobster, cursive;
+    margin:0;
+    height: 100%;
+}
+html{
+    margin:0;
+    height: 100%;
+}
+#idForm{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-94px;
+    margin-top:-51px;
+    text-align: center;
+}
+#idForm input[type="submit"]{
+    position: relative;
+    margin: auto;
+    width: 184px;
+    height: 30px;
+    font-family:Lobster, cursive;
+    font-size: medium;
+}
+.white{
+    color: white;
+}
+.red{
+    color:red;
+}
+.kahootTitle{
+    font-size:400%;
+    position: absolute;
+    left:50%;
+    margin-left:-89px;
+}
+.pinInput{
+    overflow: visible;
+    border:none;
+    border-bottom:2px solid white;
+    background-color:black;
+    height: 50px;
+    color: white;
+    font-size: medium;
+    text-align: center;
+    font-family:Lobster, cursive;
+}
+.pinInput:focus{
+    outline: none;
+    text-align: center;
+}
+#idForm p{
+    color:red;
+    font-size:large;
+}
+#loadBlock{
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color: grey;
+    opacity: .8;
+}
+#loadBar{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left: -32px;
+    margin-top: -32px;
+}
