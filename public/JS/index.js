@@ -11,7 +11,7 @@ document.getElementById("idForm").addEventListener("submit", (e) => {
         timeOutCheck = setInterval(() => {
             alert("ERROR! Request timed out. Please try again later")
             document.getElementById("loadBlock").style.display = "none"
-            clearInterval(timOutCheck)
+            clearInterval(timeOutCheck)
         }, 10000)
     }
 })

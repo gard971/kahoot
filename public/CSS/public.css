@@ -9,6 +9,17 @@ html{
     margin:0;
     height: 100%;
 }
+::placeholder{
+    font-family: Lobster, cursive;
+    text-align: center;
+}
+input{
+    font-family: Lobster, cursive;
+    text-align: center;
+}
+button{
+    font-family: Lobster, cursive;
+}
 #idForm{
     position: absolute;
     top:50%;
@@ -69,4 +80,26 @@ html{
     left:50%;
     margin-left: -32px;
     margin-top: -32px;
+}
+#nameInput{
+    position: absolute;
+    border:none;
+    color:white;
+    background-color:black;
+    top:5%;
+}
+#nameInput::placeholder{
+    color:white;
+}
+#nameInput:hover{
+    border:3px solid white;
+}
+#nameInput:focus{
+    outline:none;
+    border:3px solid white;
+}
+#playButton{
+    position: absolute;
+    left:90%;
+    top:5%;
 }
