@@ -4,6 +4,7 @@ body{
     font-family:Lobster, cursive;
     margin:0;
     height: 100%;
+    overflow-x: hidden;
 }
 html{
     margin:0;
@@ -19,6 +20,14 @@ input{
 }
 button{
     font-family: Lobster, cursive;
+}
+p{
+    color:white;
+}
+footer{
+    position: absolute;
+    padding:20px;
+    bottom:0;
 }
 #idForm{
     position: absolute;
@@ -63,6 +72,67 @@ button{
     outline: none;
     text-align: center;
 }
+.downArrow{
+    margin-top:0;
+    margin-bottom: 0;
+    position: relative;
+    left:49.8%;
+    width: 10px;
+    color:black;
+    padding-bottom: 2px;
+}
+.downArrow:hover{
+    cursor: pointer;
+}
+.newQuestionLI{
+    width: 100%;
+    background-color: white;
+    border-bottom:3px solid grey;
+}
+.newQuestionLI form input{
+    width:100%;
+    padding:0;
+    font-size:large;
+}
+.newQuestionLI input[type="text"]{
+    border:0;
+}
+.newQuestionLI input{
+    height: 50px;
+}
+.newQuestionLI input:focus{
+     outline: none;
+}
+.greyHoverBorder:hover{
+    border:5px solid gray;
+}
+.smallGreyBorder{
+    border:3px solid gray;
+}
+.answersForm input[type]{
+    position:relative;
+    float:left;
+    height: 30px;
+    width:24%;
+    margin-left:.5%;
+    margin-right: .5%;
+    top:5px;
+}
+.over {
+    transform: rotate( -180deg );            
+    transition: transform 150ms ease;
+}
+.out {
+    transform: rotate( +0deg );            
+    transition: transform 150ms ease;
+}
+.newQuestionButton:active{
+    border-width: 7px;
+}
+.newQuestionButton:hover{
+    cursor: pointer;
+}
+
 #idForm p{
     color:red;
     font-size:large;
@@ -87,9 +157,12 @@ button{
     color:white;
     background-color:black;
     top:5%;
+    height: 3%;
+    font-size: medium;
 }
 #nameInput::placeholder{
     color:white;
+    font-size: medium;
 }
 #nameInput:hover{
     border:3px solid white;
@@ -102,4 +175,23 @@ button{
     position: absolute;
     left:90%;
     top:5%;
+    height: 3%;
+    width:3%;
+    font-size: medium;
+}
+#createGameP{
+    position: absolute;
+    font-size:x-large;
+    top:15%;
+    left:50%;
+    margin-left:-68px;
+}
+#questionsUL{
+    list-style: none;
+    position: absolute;
+    top:30%;
+    left:0%;
+    padding:0;
+    text-align: center;
+    width: 100%;
 }

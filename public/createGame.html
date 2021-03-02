@@ -9,8 +9,36 @@
     <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <p class="kahootTitle"><cont class="white">Kah</cont><cont class="red">oot</cont></p>
+    <p class="kahootTitle"><cont class="white">Kah</cont><cont class="red">oot</cont></p>    
+    <p id="createGameP"><cont class="white">Creating </cont><cont class="red">Game</cont></p>
     <input placeholder="Name" type="text" id="nameInput">
     <button onclick="play()" id="playButton">Play</button>
+    <ul id="questionsUL">
+        <li class="newQuestionLI">
+            <form>
+                <input class="questionInput" placeholder="Question" type="text">
+                <p class="white downArrow">&#8595;</p>
+            </form>
+            <form class="answersForm" hidden>
+                <input type="button" value="+" class="addAnswerButton">
+                <input type="button" value="+" class="addAnswerButton"> 
+                <input type="button" value="+" class="addAnswerButton">
+                <input type="button" value="+" class="addAnswerButton">
+            </form>
+        </li>
+        <li id="finalElem" class="newQuestionLI">
+            <form>
+                <input class="greyHoverBorder newQuestionButton" type="button" value="Add new question">
+            </form>
+        </li>
+    </ul>
 </body>
+<footer>
+
+</footer>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+<script src="JS/createGame.js"></script>
 </html>
