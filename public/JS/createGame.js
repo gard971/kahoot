@@ -1,3 +1,4 @@
+var socket = io();
 (function () {
     arrowUpdate()
     plussButtonUpdate()
@@ -25,6 +26,9 @@
         arrowUpdate()
         plussButtonUpdate()
         updateBorders()
+    }
+    window.onload = function(){
+        check()
     }
 })()
 function arrowUpdate(){
@@ -111,4 +115,12 @@ function save(){
         quiz.questions.push(newObject)
     }
     console.log(quiz)
+    var keys = getKeys()
+    console.log(keys[0]+keys[1])
+    if(keys){
+        socket.emit("save", quiz, keys[0], keys[1])
+    }
+    else{
+        window.location.href="login.html"
+    }
 }
