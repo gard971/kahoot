@@ -195,3 +195,54 @@ footer{
     text-align: center;
     width: 100%;
 }
+#loginForm{
+    position: absolute;
+    left:50%;
+    top:50%;
+    border:3px solid lightgrey;
+    text-align: center;
+    background-color:grey;
+    padding:80px 30px 80px 30px;
+    transform: translate(-50%, -50%);
+}
+#loginForm input[type]{
+    width: 300px;
+    border:none;
+}
+#loginForm input[type]{
+    margin-top:10px;
+    height:30px;
+    font-size: medium;
+}
+#loginForm input[type="text"]:focus, #loginForm input[type="password"]:focus{
+    outline: none;
+}
+#loginForm label{
+    font-size: x-large;
+}
+/**/
+#registerForm{
+    position: absolute;
+    left:50%;
+    top:50%;
+    border:3px solid lightgrey;
+    text-align: center;
+    background-color:grey;
+    padding:80px 30px 80px 30px;
+    transform: translate(-50%, -50%);
+}
+#registerForm input[type]{
+    width: 300px;
+    border:none;
+}
+#registerForm input[type]{
+    margin-top:10px;
+    height:30px;
+    font-size: medium;
+}
+#registerForm input[type="text"]:focus, #loginForm input[type="password"]:focus{
+    outline: none;
+}
+#registerForm label{
+    font-size: x-large;
+}

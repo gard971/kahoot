@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/public.css">
+</head>
+<body>
+    <form id="registerForm">
+        <label><cont class="red">Create</cont> User</label><br>
+        <label id="staus" class="red" hidden>Passwords do not match</label>
+        <input type="email" placeholder="email" id="registerEmail"><br>
+        <input type="password" placeholder="Password" id="registerPassword1"><br>
+        <input type="password" placeholder="Repeat Password" id="registerPassword2"><br>
+        <input type="submit" value="register">
+    </form>
+</body>
+<script src="socket.io/socket.io.js"></script>
+<script src="js/register.js"></script>
+<script src="js/public.js"></script>
+</html>
